@@ -17,3 +17,15 @@ export default function (userName, message) {
   console.log("arrow function");
   return userName + message;
 };
+
+//arrow function if only one paramater :
+(userName) => {
+  //^harusnya gk kurung, autocorrect
+  return userName;
+};
+
+//arrow function if only return :
+(userName) => 8 * 3;
+
+//arrow function return objcet
+(userName) => ({ age: number });
